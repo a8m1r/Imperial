@@ -15,7 +15,7 @@ export async function POST(req: Request) {
     }
 
     await resend.sendEmail({
-      from: 'Imperial',
+      from: 'Imperial <info@imperial-company.com>',
       to: 'imperialco2022@gmail.com',
       subject: 'Новое сообщение',
       react: Email({ name, organization, email, topic, message, phone }),
